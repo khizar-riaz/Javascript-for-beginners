@@ -29,6 +29,7 @@ var b = "khizarriaz";
 var c = null;
 var d = undefined;
 let e = "khizarriaz";
+const f = 35;
 
 console.log("var type is global scope");
 //var can be redaclared like in line 40
@@ -48,7 +49,15 @@ console.log("let type is blocked scope");
 console.log(e); //before block return khizarriaz
 {
   let e = 21;
-  //let e=31; this will give error
+  //let e=31; this will give error but e=31 is ok
   console.log(e); //in block return 21 within block
 }
 console.log(e); //after block return khizarriaz
+
+//const can not b updated nor be declared
+//we need to declare and initalize const at the same time
+//we cannot do this const name;
+const persoNName = "KHIZAR";
+console.log("const veriable");
+//f=234; we cannot do this as f is constant
+console.log(f);
