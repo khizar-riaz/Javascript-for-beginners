@@ -15,7 +15,16 @@ let d = "Khizar";
 let e = true; //can be false
 let f = BigInt("12345");
 let g = undefined;
-console.log(a,b,c,d,e,f,g)
+console.log(a, b, c, d, e, f, g);
 //know the type of primitive
-console.log(typeof a,typeof b, typeof c, typeof d, typeof e, typeof f, typeof g);
+console.log(
+  typeof a,
+  typeof b,
+  typeof c,
+  typeof d,
+  typeof e,
+  typeof f,
+  typeof g
+);
 //OBJECT are key value pair data type (non Primitives datatypes)
+
