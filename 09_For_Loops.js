@@ -37,6 +37,6 @@ for (let i in obj){
 //for of loop
 //loop through the values of the object
 
-for (let i of "khizar"){
+for (let i of "khizar"){ 
     console.log(i);
 }
