@@ -10,3 +10,5 @@ console.log(myName.toLowerCase());
 console.log(myName.slice(2,4));
 //replace part of string
 console.log(myName.replace("ar" ,"riaz"));
+//concatination
+console.log(myName.concat("is a friend"));
