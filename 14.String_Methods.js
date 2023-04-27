@@ -11,4 +11,8 @@ console.log(myName.slice(2,4));
 //replace part of string
 console.log(myName.replace("ar" ,"riaz"));
 //concatination
-console.log(myName.concat("is a friend"));
+console.log(myName.concat(" is a friend"));
+//trim function 
+let x = "  hello world  ";
+console.log(x.trim());
+
