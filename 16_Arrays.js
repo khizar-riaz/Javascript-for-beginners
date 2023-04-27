@@ -15,5 +15,5 @@ for (let i = 0; i<Arr.length; i++ )
 Arr[3] = 98;
 console.log(Arr);
 
-//arrays behave like a object in JS
+//Arrays behave like a object in JS
 console.log(typeof Arr);
