@@ -28,3 +28,4 @@ console.log("adding new element : ", arr2);
 //sclice
 let arr3 = arr2.slice(2,4);
 console.log(arr3);
+
