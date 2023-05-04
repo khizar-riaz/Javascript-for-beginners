@@ -16,15 +16,22 @@ do {
 console.log(arr);
 
 //QNO3 filter array divisible by 10
-let arr2 = [1,2,30,40,4,560,9];
-let newarray = arr2.filter((x) =>{
-    return x%10 == 0;
-})
+let arr2 = [1, 2, 30, 40, 4, 560, 9];
+let newarray = arr2.filter((x) => {
+  return x % 10 == 0;
+});
 console.log(newarray);
 
 //QNO4 create an array of square of number
-let arr3 = [1,3,4,5,66,7,8];
-let narray = arr3.map((y)=>{
-    return y*y;
-})
+let arr3 = [1, 3, 4, 5, 66, 7, 8];
+let narray = arr3.map((y) => {
+  return y * y;
+});
 console.log(narray);
+
+//QNO5 use reduce function to calculate factorial of first 10 natural numbers
+let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let nnarray = arr4.reduce((x1, x2) => {
+  return x1 * x2;
+});
+console.log(nnarray);
