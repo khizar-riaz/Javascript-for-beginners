@@ -6,8 +6,7 @@ let randomNumber;
 
 randomNumber = Math.floor(Math.random() * 100) + 1;
 
-while (guess !== randomNumber) 
-{
+while (guess !== randomNumber) {
   guess = parseInt(prompt("guess a number between 1 and 100: "));
 
   if (guess === randomNumber) {
