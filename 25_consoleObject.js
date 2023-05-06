@@ -9,3 +9,12 @@ console.clear() //it will clear everything
  let obj = {a1: 1, a2: 2, a3: 3};
 console.table(obj)      //it show obj data in the form of table
 console.info("this is an information"); //log and info both will go in info section
+console.time();
+//comsole.time("process 1");
+//console.timeEnd("time for process 1");
+
+console.time("forLop")
+for(let i =0; i<5; i++){
+i = i+1;
+}
+console.timeEnd("forLop");
