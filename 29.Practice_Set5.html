@@ -1,27 +1,32 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        //program to alert age for driving
-        const canDrive = (agE) =>{
-            age>=18?true:false
+      //program to alert age for driving
+      //in question 1 ask user to see prompt again
+      let runAgain = true;
+     
+      while (runAgain)
+       {
+        let age;
+        age = prompt("Enter Your Age");
+        age = Number.parseInt(age);
+        const canDrive = (age) => {
+        return age >= 18 ? true : false
+      }
+        if (canDrive(age)) {
+          alert("yes you can drive");
+        } else {
+          alert("no you cannot drive");
         }
-    let age;
-    age = prompt("Enter Your Age");
-    age = Number.parseInt(age);
-    if (canDrive(age))
-    {
-        alert("yes you can drive");
-    }
-    else{
-        alert("no you cannot drive")
-    }
-    </script>
+        runAgain = confirm("do you want to run again?");
+      }
     
-</body>
+    </script>
+  </body>
 </html>
