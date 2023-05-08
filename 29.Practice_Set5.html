@@ -6,16 +6,44 @@
     <title>Document</title>
   </head>
   <body>
-  
     <script>
-        //IF NUMER IS GREATER THEN FOUR THEN REDIRECT TO google.com
-        let number;
-        number = prompt("enter a number");
-        number = Number.parseInt(number);
-        if (number > 4)
-        {
-            location.href = "https://google.com"
+      //program to alert age for driving
+      //in question 1 ask user to see prompt again
+      //if age is negitive then console error
+      let runAgain = true;
+
+      while (runAgain) {
+        let age;
+        age = prompt("Enter Your Age");
+        age = Number.parseInt(age);
+        if (age < 0) {
+          console.error("please enter a valid age");
+          break;
         }
+        const canDrive = (age) => {
+          return age >= 18 ? true : false;
+        };
+        if (canDrive(age)) {
+          alert("yes you can drive");
+        } else {
+          alert("no you cannot drive");
+        }
+        runAgain = confirm("do you want to run again?");
+      }
+    </script>
+    <script>
+      //IF NUMER IS GREATER THEN FOUR THEN REDIRECT TO google.com
+      let number;
+      number = prompt("enter a number");
+      number = Number.parseInt(number);
+      if (number > 4) {
+        location.href = "https://google.com";
+      }
+    </script>
+    <script>
+        //change background  color through user prompt
+        let col = prompt("enter the color")
+        document.body.style.background = col
     </script>
   </body>
 </html>
