@@ -9,16 +9,21 @@
     <script>
       //program to alert age for driving
       //in question 1 ask user to see prompt again
+      //if age is negitive then console error
       let runAgain = true;
-     
-      while (runAgain)
-       {
+
+      while (runAgain) {
         let age;
         age = prompt("Enter Your Age");
         age = Number.parseInt(age);
+        if(age<0)
+        {
+            console.error("please enter a valid age")
+            break;
+        }
         const canDrive = (age) => {
-        return age >= 18 ? true : false
-      }
+          return age >= 18 ? true : false;
+        };
         if (canDrive(age)) {
           alert("yes you can drive");
         } else {
@@ -26,7 +31,6 @@
         }
         runAgain = confirm("do you want to run again?");
       }
-    
     </script>
   </body>
 </html>
