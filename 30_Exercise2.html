@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snake water gun</title>
+  </head>
+  <body>
+    <script>
+        let runAgain = true;
+      // use javascript to create snake water gum game. the game should ask user to enter S,W or G. the computer should rendomly g
+      //  generate S,W or G and declare win or loss using alert, confirm and console.
+    while(runAgain){
+
+    
+      //function computer choice
+      function computerChoice() {
+        const choices = ['S', 'W', 'G'];
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+      }
+
+      // Function to play the game
+      function playGame() {
+        const userChoice = prompt(
+          "Enter 'S' for Snake, 'W' for Water, or 'G' for Gun:"
+        );
+        const computer = computerChoice();
+
+        if (
+          !userChoice ||
+          !["S", "W", "G"].includes(userChoice.toUpperCase())
+        ) {
+          alert("Invalid choice! Please enter a valid choice.");
+          return;
+        }
+
+        if (userChoice.toUpperCase() === computer) {
+          console.log("It's a tie!");
+          alert(`Computer chose ${computer}. It\'s a tie!`);
+        } else if (
+          (userChoice.toUpperCase() === "S" && computer === "W") ||
+          (userChoice.toUpperCase() === "W" && computer === "G") ||
+          (userChoice.toUpperCase() === "G" && computer === "S")
+        ) {
+          console.log("You win!");
+          alert(`Computer chose ${computer}. You win!`);
+        } else {
+          console.log("You lose!");
+          alert(`Computer chose ${computer}. You lose!`);
+        }
+      }
+
+      // Play the game
+      playGame();
+      runAgain = confirm("do you want to play again?");
+    }
+    </script>
+  </body>
+</html>
