@@ -1,0 +1,19 @@
+<html lang="en">   <!--root element-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>walking the dom</title>
+</head>
+<script>
+    console.log(document.body)   //as we are accessing body before the tag so it will return null
+</script>
+<body>
+    helllow world
+    <span>its me</span> <!--if we close span with /div then some browser will auto correct it-->
+    
+</body>
+<script>
+    console.log(document.body)   //as we are accessing body after the tag so it will return the entire body tag
+</script>
+</html>
