@@ -1,0 +1,27 @@
+<html lang="en"> <!--every element in html tag is a descendant node of html tag -->
+<head>
+    <meta charset="UTF-8">  <!--meta tag is child of head-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--head and body are siblings-->
+<body><div>    <!--body tag is child of html-->
+
+
+      <!--div tag is a child of body tag-->
+        
+        <p>this is me and I am really good</p>
+        <span>I am sibling of p tag</span>
+    
+    </div> 
+    
+
+</body>
+<script>
+    console.log(document.body.haschildNodes)  //return true or false
+    console.log(document.body.firstChild)  //return the first child in the body i.e usually space called text node or body.chileNodes[0]
+    console.log(document.body.lastChild)
+    console.log(document.body.childNodes)   //Show all child in the body
+</script>
+</html>
