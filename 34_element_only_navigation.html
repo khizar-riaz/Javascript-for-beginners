@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <nav>
+      <uil>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </uil>
+    </nav>
+
+    <script>
+      let b = document.body;
+      console.log("first child of b is ", b.firstChild); //first child of b is  #text
+      console.log("first element of b is: ", b.firstElementChild); //first element of b is:  <nav>​…​</nav>​
+    </script>
+
+    <script>
+      const changeBGRed = () => {   
+        document.body.firstElementChild.style.background = "red";
+      }
+    </script>
+  </body>
+</html>
