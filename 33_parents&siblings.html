@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--body tag is next sibling of head-->
+    <!--proporties of DOM collection are read only-->
+    <div>div 1</div>
+    <div>div 2</div>
+    <!--next sibling of div 1-->
+    <div class="">div 3</div>
+    <div></div>
+
+    <script>
+      console.log(document.body.firstChild);
+      a = document.body.firstChild;
+      console.log(a.parentNode);
+      console.log(a.parentElement);
+    </script>
+  </body>
+</html>
