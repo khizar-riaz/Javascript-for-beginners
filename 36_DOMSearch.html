@@ -59,7 +59,7 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p  id = "firstcarddesc" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary this">Go somewhere</a>
         </div>
       </div>
 
@@ -70,6 +70,17 @@
         //now chage the color of description of first card by id
         let cDesc = document.getElementById("firstcarddesc")
         cDesc.style.color = "green"
+        //query selector by CSS selector
+        let ctitles = document.querySelectorAll(".card-title")
+        //ctitles.style.color = "black"
+        console.log(ctitles)
+        document.querySelector(".this").style.color = "black"  //this select first element
+
+       //get element by tag name
+       console.log(document.getElementsByTagName("a"))
+       console.log(document.querySelector(".card").getElementsByTagName("a"))
+       //getn elements by name
+       console.log(document.getElementsByName("search"))
       </script>
 </body>
 </html>
