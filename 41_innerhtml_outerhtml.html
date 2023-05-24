@@ -7,7 +7,7 @@
   </head>
   <body>
     
-    <span id="first">hi i am span</span>
+    <span id="first" hidden>hi i am span</span>
     <script>
       //tagname and node name
       let x = document.getElementsByTagName("span")[0];
@@ -27,7 +27,9 @@
 
       //text content
       console.log(document.body.textContent)   //copy website as a text
-
+      
+      //hidden 
+      first.hidden = false;    //to remove hidden content
 
 
     </script>
