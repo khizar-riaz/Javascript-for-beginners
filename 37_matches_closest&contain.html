@@ -1,30 +1,30 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="box" id="id1">this is an element 1 <span  id="sp1">SPAN1</span></div>
+  </head>
+  <body>
+    <div class="box" id="id1">
+      this is an element 1 <span id="sp1">SPAN1</span>
+    </div>
     <div class="box" id="id2">this is an element 2</div>
 
-
     <script>
-        let id1 = document.getElementById("id1")  
-        let sp1 = document.getElementById("sp1")  
-        console.log(id1)
-        //Matches by id with css selector whether this element matches this css selector or not
-        console.log(id1.matches(".classone"))    //will return false because there is no match class classone 
-        console.log(id1.matches(".box"))         //will return true beacuse there is a class name box
+      let id1 = document.getElementById("id1");
+      let sp1 = document.getElementById("sp1");
+      console.log(id1);
+      //Matches by id with css selector whether this element matches this css selector or not
+      console.log(id1.matches(".classone")); //will return false because there is no match class classone
+      console.log(id1.matches(".box")); //will return true beacuse there is a class name box
 
-        //closest looks for the nearest ancestor that matches the given CSS selector
-        console.log(sp1.closest("#sp1"))
+      //closest looks for the nearest ancestor that matches the given CSS selector
+      console.log(sp1.closest("#sp1"));
 
-        //contains return true if A element is in B element else return false
-        console.log(id1.contains(sp1))   //return true  because sp1 is in id 1
-        console.log(sp1.contains(id1))   //return false  
+      //contains return true if A element is in B element else return false
+      console.log(id1.contains(sp1)); //return true  because sp1 is in id 1
+      console.log(sp1.contains(id1)); //return false
     </script>
-</body>
-
+  </body>
 </html>
